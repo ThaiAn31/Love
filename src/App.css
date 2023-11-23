@@ -23,13 +23,31 @@
 }
 
 .heart {
-  background-color: #e2264d;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
   position: absolute;
+  width: 20px;
+  height: 20px;
   transform: rotate(-45deg);
   animation: fall 4s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e2264d;
+  position: absolute;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 10px;
 }
 
 @keyframes fall {
