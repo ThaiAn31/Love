@@ -11,7 +11,7 @@ function App() {
 
       setTimeout(() => {
         heart.remove();
-      }, 4000);
+      }, 9000);
     };
 
     setInterval(createHeart, 500);
